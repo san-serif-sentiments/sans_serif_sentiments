@@ -1,0 +1,146 @@
+---
+title: AI-Assisted Messaging Patterns Using Flavor & Function  
+status: Stable  
+version: v1.0  
+last_updated: 2025-07-23  
+maintainer: Shailesh Rawat (PoeticMayhem)  
+tags: [ai-comms, prompt-engineering, ethical-writing, enterprise-ai, contentops]  
+---
+
+# AI-Assisted Messaging Patterns Using the Flavor & Function Framework  
+*Just because AI can draft it doesn’t mean it should.*
+
+---
+
+## 📌 Purpose
+
+AI can help you draft faster — but speed is not strategy.  
+This guide shows how to use AI for **thinking clarity**, not just output velocity.  
+It builds on the Flavor & Function loop, so messages remain clear, credible, and human.
+
+Loop:  
+- **Friction** – What complexity are we untangling?  
+- **Bridge** – What thinking gap is AI helping close?  
+- **Evidence** – How does AI assist without replacing human insight?  
+- **Implication** – What goes wrong when AI is used blindly?  
+- **Action** – How do you guide AI or co-write with it?  
+- **Look Ahead** – What should the team verify, iterate, or reflect on?
+
+---
+
+## 🧰 Template 1: Co-Writing a Change Announcement with AI
+
+**Use When:** Drafting a first version with AI but needing human tone and clarity.
+
+```
+You are writing a change comms note and want to use AI for structure, not soul.
+
+Friction → You need to explain something complex with clarity and empathy.  
+Bridge → AI helps draft faster, but final tone is refined by you.  
+Evidence → The AI-generated draft offers structure, but lacks stakeholder nuance.  
+Implication → Sending it as-is may trigger confusion or misinterpretation.  
+Action → Use AI to create a skeletal version. Edit key parts: intro, bridge, CTA.  
+Look Ahead → Share feedback on how AI drafting helped or missed the mark.
+```
+
+---
+
+### ✅ Example 1
+
+```
+You are announcing a change in performance review format.
+
+Friction → Past reviews felt like surprises or scorekeeping.  
+Bridge → This change moves us toward feedback-as-growth.  
+Evidence → AI-generated email helped list key bullets quickly.  
+Implication → But without context, it read like a cold policy update.  
+Action → You rewrote the opening + added team-specific outcomes.  
+Look Ahead → Ask managers to share this using their own voice, not forward the AI text.
+```
+
+---
+
+## 🧰 Template 2: Using AI to Rewrite for Audience Clarity
+
+**Use When:** A technical update needs to be made user-friendly.
+
+```
+You are using AI to simplify or reframe dense info for a broader audience.
+
+Friction → Engineering docs or legal copy is hard for teams to digest.  
+Bridge → AI can help rephrase, but needs accurate grounding.  
+Evidence → Without prompt clarity, AI may oversimplify or hallucinate.  
+Implication → Misinformed simplification leads to bad decisions.  
+Action → Use layered prompting. First: Simplify without dumbing down. Then: Validate facts.  
+Look Ahead → Add a human sign-off step before distribution.
+```
+
+---
+
+### ✅ Example 2
+
+```
+You are rewriting a data policy update for all employees.
+
+Friction → Original copy is 900 words of legal and security terms.  
+Bridge → AI is used to identify structure, not to invent meaning.  
+Evidence → It helped chunk content into “What changed / Why / Impact” format.  
+Implication → But one section introduced inaccurate wording around user consent.  
+Action → Manually rewrote that part and included proper legal review.  
+Look Ahead → Feedback survey will test understanding of this change.
+```
+
+---
+
+## 🧰 Template 3: Prompting AI to Reframe Tone (Empathy, Urgency, Calm)
+
+**Use When:** The message is technically right, but emotionally off.
+
+```
+You are using AI to reframe tone — not facts — for a sensitive message.
+
+Friction → The current message feels robotic or sharp.  
+Bridge → AI can model emotional cues, but must be nudged.  
+Evidence → It helped soften transitions and rephrase hard lines.  
+Implication → Without human review, tone may still feel performative.  
+Action → Prompt AI: “Rewrite with calm authority + reader-first perspective.”  
+Look Ahead → Check final draft with 2 humans: 1 internal, 1 external if possible.
+```
+
+---
+
+### ✅ Example 3
+
+```
+You are informing teams about a delayed product release.
+
+Friction → Original message read like a blame game.  
+Bridge → Prompted AI to use calm, empathetic framing with transparent reasoning.  
+Evidence → Resulting draft kept facts but removed accusatory tone.  
+Implication → Still had vague sections, which you tightened manually.  
+Action → Final note used AI’s improved transitions but kept your CTA intact.  
+Look Ahead → Shared timeline will be revisited weekly with shared status updates.
+```
+
+---
+
+## 🚧 Where AI Fails in Messaging (Blockers)
+
+| Issue Type             | What It Looks Like                                                  | Fix It With Flavor & Function                                        |
+|------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------|
+| ❌ Tone Blindness       | AI-generated output sounds polished but flat or tone-deaf            | Use **Bridge** and **Look Ahead** to humanize and sanity-check tone |
+| ❌ Prompt Ambiguity     | Output varies wildly based on minor changes in instruction           | Use **Friction** and **Action** to shape clear prompting paths      |
+| ❌ Hidden Assumptions   | AI fills in gaps with wrong or biased assumptions                    | Add **Evidence** step to ground in known truth                      |
+| ❌ Hallucinated Help    | AI “adds value” that isn’t fact-checked                              | Implication section must stress human review before trust           |
+
+---
+
+## ✅ TL;DR
+
+AI isn’t a ghostwriter — it’s a **thinking partner**.  
+Used with **Flavor & Function**, it improves clarity without outsourcing responsibility.
+
+Write with it. Think beyond it.  
+And always, **edit like it matters.**
+
+---
