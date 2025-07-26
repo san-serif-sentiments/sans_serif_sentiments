@@ -1,3 +1,4 @@
+---
 title: Beyond the Build: Code, Context, and the Communication Gap
 description: A strategic framework to decode workflows, distill assumptions, and deliver clarity between developers and non-technical teams.
 status: Stable
