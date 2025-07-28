@@ -2,94 +2,95 @@
 **Techno-Functional Analyst | Change Translator | Strategic Communicator | Product-Enabler**  
 📍 Pune, Maharashtra – 411021  
 📧 shailesh.rawat1403@gmail.com | 📱 +91-8126539464  
-🌐 www.pruningmypothos.com | LinkedIn (Add URL) | GitHub (If applicable)
+🌐 www.pruningmypothos.com | LinkedIn (Add URL) | GitHub (Optional)
 
 ---
 
 ## 🧭 Professional Summary
 
-Strategic communications and content enablement professional with 8+ years of experience bridging the gap between business needs, user understanding, and technical systems. Proven track record in translating complexity into clarity—across SaaS products, internal workflows, and change programs. Skilled in requirements gathering, stakeholder alignment, journey mapping, and narrative design that supports adoption, automation, and growth.
+Techno-functional communicator with 8+ years of experience enabling clarity across enterprise systems, content, and change programs. Specialized in translating complexity into usable narratives for internal teams, product stakeholders, and end-users. Experienced in AI documentation, product rollout communications, and aligning messaging across change adoption, automation, and developer workflows.
 
 ---
 
 ## 🧩 Core Competencies
 
 - **Business Analysis & Change Management**  
-  Journey Mapping · Process Refinement · Requirements Gathering · SDLC & Agile Workflows · Jira · Confluence
+  Journey Mapping · Process Documentation · SDLC/DDLC · Agile Comms · Requirements Gathering · Intranet Messaging
 
-- **Product & Content Strategy**  
-  Roadmapping Support · Content Enablement · UX Copy · Intranet Comms · SEO & Organic Growth · A/B Testing
+- **Content Strategy & Product Enablement**  
+  Content Governance · UX Copy · Roadmap Support · Stakeholder Comms · A/B Testing · Cross-Functional Alignment
 
-- **Strategic Communications**  
-  Internal Comms · Crisis Messaging · Narrative Development · Storyboarding · PowerPoint + Visual Scripting
+- **Strategic Communication**  
+  Internal Messaging · Change Narratives · Storyboarding · PowerPoint Design · Visual Scripting · Crisis Comms
 
-- **AI & Technical Writing**  
-  Prompt Engineering · LLM Tuning · AI Documentation · Markdown · GitHub · CMS Tools · HTML, CSS, JS (basic)
+- **AI & Technical Documentation**  
+  Prompt Engineering · LLM Tuning · Markdown · GitHub · CMS Tools · AI/ML Familiarity · Logic Mapping · HTML/CSS (basic)
 
 ---
 
 ## 🧠 Professional Experience
 
+### **Indovance Inc** — *Content Specialist*  
+*2019 – 2024*  
+- Led Salesforce implementation content: created training decks, internal guides, and change comms for adoption.  
+- Documented complex SaaS workflows into simplified, structured user guides and technical content.  
+- Partnered with SMEs to translate engineering knowledge into scalable onboarding materials and public-facing content.  
+- Orchestrated SEO-led blog and case study strategy to increase web visibility and credibility.  
+- Supported server migrations and automation documentation by aligning product, support, and leadership teams.
+
 ### **GoIgnis** — *Marcom Manager*  
 *2024 – 2025*  
-- Led change initiatives supporting cloud migration, Salesforce rollout, and internal process documentation.  
-- Delivered brand-aligned comms strategies using storytelling and visual design across internal portals.  
-- Created high-performing SEO blogs, white papers, and customer case studies to increase lead quality and conversion.  
-- Facilitated training documentation and onboarding decks aligned with updated product features.
+- Revamped internal documentation structure to support cloud automation and communication workflows.  
+- Led brand-aligned intranet comms and change rollouts using simplified visuals and decision-tree content.  
+- Authored long-form white papers and email campaigns to support business development and lead nurturing.  
+- Collaborated with design and tech teams to storyboard user journeys and optimize internal communication.
 
 ### **Soul AI** — *Gen AI & Prompt Engineer*  
 *2024 – 2024*  
-- Trained LLMs (e.g. Dolphin) in comprehension, contextual recall, and summarization techniques.  
-- Designed prompt templates and fine-tuned models for human-aligned outputs in text, audio, and visual formats.  
-- Built internal knowledge bases and AI documentation aligned with Responsible AI standards.
-
-### **Indovance Inc** — *Content Specialist*  
-*2019 – 2024*  
-- Led technical writing and marcom content for engineering SaaS solutions.  
-- Translated engineering workflows and software updates into user-friendly documentation and visual guides.  
-- Conducted stakeholder interviews and SME sessions to align tone, accuracy, and usability of comms.  
-- Managed content calendars and style guides across channels (email, blog, case studies, onboarding).
+- Trained LLMs (e.g., Dolphin) for context retention, summarization, and human-aligned generative outputs.  
+- Built prompt libraries and reusable AI documentation standards across formats (text, voice, visual).  
+- Conducted AI reasoning tests and worked on prompt guardrails to support model fine-tuning and safety.
 
 ### **Hopp Worldwide** — *Business Development Associate*  
 *2018 – 2018*  
-- Coordinated internal/external communication across maritime logistics operations.  
-- Created industry trend reports and operations briefs to support leadership decisions.
+- Managed internal and client-facing communications for maritime operations.  
+- Conducted industry landscape research and briefed senior management on logistics trends.  
+- Streamlined data presentation for operational performance reports.
 
 ---
 
 ## 🎓 Education
 
-**MBA – Executive Program (NMIMS / JBIMS / Mumbai University)**  
-*2022 – 2023*
+**MBA – Executive Program**  
+*NMIMS / JBIMS / Mumbai University* — *2022 – 2023*
 
-**MBA – Oil & Gas (University of Petroleum & Energy Studies)**  
-*2016 – 2018*
+**MBA – Oil & Gas Management**  
+*University of Petroleum & Energy Studies* — *2016 – 2018*
 
-**BA – English (Honors), Delhi University**  
-*2011 – 2014*
+**BA – English (Honors)**  
+*Delhi University* — *2011 – 2014*
 
 ---
 
 ## 📜 Certifications
 
-- **Salesforce Certified Marketing Associate**  
-- **Salesforce Certified AI Associate**  
-- **HubSpot Content Marketing**  
-- **HubSpot Digital Marketing & Social Media**  
-- **AI/ML Ops – Beginner Track**
+- Salesforce Certified Marketing Associate  
+- Salesforce Certified AI Associate  
+- HubSpot Certified: Content Marketing, Digital Marketing, Social Media  
+- AI/ML Ops – Beginner Track
 
 ---
 
 ## 🛠 Tools & Tech Stack
 
-- **Communication & Collaboration**: Confluence, Notion, SharePoint, Slack, Microsoft 365, Intranet Tools  
-- **Design & Content**: PowerPoint, Figma, Canva, Adobe Suite  
-- **Web & CMS**: WordPress, Markdown, HTML/CSS/JS (basic)  
-- **AI Tools**: OpenAI, HuggingFace, LangChain, Ollama, CrewAI, RAG pipelines  
-- **Others**: GitHub, Reaper (audio), SEO tools, CRM platforms  
+- **Content & Comms**: PowerPoint, Figma, Canva, Adobe Suite, Markdown  
+- **Collaboration & CMS**: Confluence, Notion, SharePoint, Slack, WordPress  
+- **Technical & Dev Tools**: GitHub, HTML/CSS/JS (basic), SEO tools  
+- **AI & LLM**: OpenAI, HuggingFace, LangChain, CrewAI, Ollama, Prompt Libraries  
+- **Audio & Visual**: Reaper, Internal Video Training Design
 
 ---
 
-## 💡 Personal Note
+## 🧭 Personal Lens
 
-Beyond content and strategy, I care deeply about **making systems usable**—whether through language, logic, or learning. My approach combines empathy, structure, and clarity to help teams make better decisions and align faster.
+I work where systems meet sentences. My approach blends logic, language, and empathy — ensuring that transformation isn’t just implemented, but understood. I write, refine, and roadmap clarity so that teams align faster and change lasts longer.
