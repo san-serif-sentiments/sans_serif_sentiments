@@ -30,6 +30,13 @@ Techno-functional communicator with 8+ years of experience enabling clarity acro
 
 ## 🧠 Professional Experience
 
+### **GoIgnis** — *Marcom Manager*  
+*2024 – 2025*  
+- Revamped internal documentation structure to support cloud automation and communication workflows.  
+- Led brand-aligned intranet comms and change rollouts using simplified visuals and decision-tree content.  
+- Authored long-form white papers and email campaigns to support business development and lead nurturing.  
+- Collaborated with design and tech teams to storyboard user journeys and optimize internal communication.
+
 ### **Indovance Inc** — *Content Specialist*  
 *2019 – 2024*  
 - Led Salesforce implementation content: created training decks, internal guides, and change comms for adoption.  
@@ -37,13 +44,6 @@ Techno-functional communicator with 8+ years of experience enabling clarity acro
 - Partnered with SMEs to translate engineering knowledge into scalable onboarding materials and public-facing content.  
 - Orchestrated SEO-led blog and case study strategy to increase web visibility and credibility.  
 - Supported server migrations and automation documentation by aligning product, support, and leadership teams.
-
-### **GoIgnis** — *Marcom Manager*  
-*2024 – 2025*  
-- Revamped internal documentation structure to support cloud automation and communication workflows.  
-- Led brand-aligned intranet comms and change rollouts using simplified visuals and decision-tree content.  
-- Authored long-form white papers and email campaigns to support business development and lead nurturing.  
-- Collaborated with design and tech teams to storyboard user journeys and optimize internal communication.
 
 ### **Soul AI** — *Gen AI & Prompt Engineer*  
 *2024 – 2024*  
