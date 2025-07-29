@@ -77,7 +77,7 @@ Techno-functional communicator with 8+ years of experience enabling clarity acro
 - Salesforce Certified Marketing Associate  
 - Salesforce Certified AI Associate  
 - HubSpot Certified: Content Marketing, Digital Marketing, Social Media  
-- AI/ML Ops – Beginner Track
+- AI/ML Ops – Nvidia 
 
 ---
 
@@ -85,12 +85,12 @@ Techno-functional communicator with 8+ years of experience enabling clarity acro
 
 - **Content & Comms**: PowerPoint, Figma, Canva, Adobe Suite, Markdown  
 - **Collaboration & CMS**: Confluence, Notion, SharePoint, Slack, WordPress  
-- **Technical & Dev Tools**: GitHub, HTML/CSS/JS (basic), SEO tools  
+- **Technical & Dev Tools**: GitHub, Python, HTML/CSS/JS, SEO tools  
 - **AI & LLM**: OpenAI, HuggingFace, LangChain, CrewAI, Ollama, Prompt Libraries  
-- **Audio & Visual**: Reaper, Internal Video Training Design
+- **Audio & Visual**: Adobe Creative Cloud Reaper, Internal Video Training Design
 
 ---
 
-## 🧭 Personal Lens
-
-I work where systems meet sentences. My approach blends logic, language, and empathy — ensuring that transformation isn’t just implemented, but understood. I write, refine, and roadmap clarity so that teams align faster and change lasts longer.
+## 🧠 Thinking Philosophy  
+I work where systems meet sentences. My approach blends code, comms, and culture — ensuring that transformation isn’t just implemented, but understood. 
+I Write.I Build. I Translate.
