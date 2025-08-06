@@ -1,6 +1,14 @@
+---
+title: "You Don’t Have a Prompt Problem — You Have a Thinking Problem"
+chapter: 2
+author: "Shailesh Rawat"
+tags: [prompt-engineering, cognitive-clarity, input-structure, ai-alignment]
+summary: "Unpacks how poor prompts are often just poor thinking in disguise, and how structured thought leads to reliable outputs."
+---
+
 # Learning How to Think (In the Age of AI)
 
-## Chapter 1: You Don’t Have a Prompt Problem — You Have a Thinking Problem
+## Chapter 2: You Don’t Have a Prompt Problem — You Have a Thinking Problem
 
 ### Friction
 
@@ -14,7 +22,8 @@ It’s not the prompt.
 It’s the *thinking* behind the prompt.
 
 People are treating AI like a vending machine:  
-Insert a sentence. Expect brilliance.  
+Insert a sentence. Expect brilliance.
+
 But AI doesn’t work on syntax alone.  
 It works on **structure, logic, and clarity** — all things that reflect *how you think*.
 
@@ -37,74 +46,95 @@ So if your thinking is scattered, shallow, or incomplete — your prompt will be
 
 ### Evidence
 
-- A vague prompt like “Write me a strategy” leads to fluff because no inputs were defined.  
-- A prompt with unclear goals like “Summarize this” without tone, length, or audience leads to generic output.  
-- An overstuffed prompt with multiple instructions and no hierarchy confuses the model — and a human.
+Real-world prompt issues usually fall into these patterns:
 
-And still, people say:  
+| Weak Prompt Example                | Why It Fails                                             |
+|-----------------------------------|-----------------------------------------------------------|
+| “Write me a strategy.”            | No audience, scope, or objective                         |
+| “Summarize this article.”         | Missing tone, length, and goal                          |
+| “Generate 10 ideas fast.”         | No context or evaluation filter                         |
+| “Fix this text for a CEO.”        | No role definition, tone preference, or business lens   |
+
+And yet people say:  
 > “LLMs are dumb.”
 
-No. They're *faithful to your ambiguity*.
+No — they’re **faithful to your ambiguity**.
 
 ---
 
 ### Implication
 
-AI doesn’t fill in your mental gaps.  
-It **magnifies** them.
+AI doesn’t fix your mental shortcuts.  
+It **follows them**.
 
-Every weak prompt is a window into unstructured thought.  
-Every AI hallucination is often a **human assumption** that was never clarified.
+If your inputs are lazy, vague, or overstuffed, the output will reflect that.  
+A hallucination is often not a failure of model capability —  
+It's a failure of *input structure*.
 
-This isn’t about writing better prompts.  
-It’s about **thinking better questions**.
-
-The model isn’t failing.  
-It’s following your fog.
+That’s not a prompt problem.  
+That’s a **thinking leak**.
 
 ---
 
 ### Action
 
-Ask yourself before prompting:
-- What exactly do I want?
-- Who is it for?
-- What is the desired format?
-- What should be excluded?
-- What assumptions am I making?
+Use this mental scaffold **before** writing prompts:
 
-Then structure it like a briefing, not a magic wish:
-- Objective  
-- Background  
-- Constraints  
-- Output format  
-- Evaluation criteria
+```markdown
+## Prompt Thinking Checklist
+- [ ] What is the exact objective?
+- [ ] Who is the target audience or persona?
+- [ ] What format or structure do I expect?
+- [ ] What should be excluded or avoided?
+- [ ] How will I judge if this response is good?
+```
 
-You’ll notice — the AI gets sharper.  
-Because *you* got sharper.
+You can translate it into prompt blocks:
 
-Try this:  
-Take a failed prompt you used recently.  
-Now answer the five questions above.  
-Rewrite it like a design doc. Run it again.  
-Compare. Learn. Repeat.
+## Prompt Structure Template
+```markdown
+Objective: [What you want to achieve]  
+Persona: [Who should speak/write/respond]  
+Style/Tone: [Formal, casual, witty, neutral, etc.]  
+Constraints: [Words to avoid, things not to say]  
+Format: [List, table, narrative, slide content, etc.]  
+Success Criteria: [How you’ll evaluate it]
+```
+Try this now:
+
+1. Take a failed prompt from your history.
+
+
+2. Rewrite it using the structure above.
+
+
+3. Compare the responses side by side.
+
+
+4. Ask: Was the failure the model — or the framing?
+
+
+
 
 ---
 
-### Look Ahead
+Look Ahead
 
-In the next chapter, we’ll go deeper into a major misconception:  
-> “Agents are just tools.”
+In the next chapter:
 
-But what if they’re not?  
-What if agents are **externalized thought loops**?  
-Structured reflections of how you reason, decide, and act?
+> “Agents Are Not Tools. They Are Thought Extensions.”
 
-If so — building agents isn’t a coding task.  
-It’s a thinking ritual.
 
-> Let’s build the ritual, one loop at a time.
+
+We'll explore how agents aren’t just automators —
+they are reflections of your cognitive loop.
+
+If your thinking has no logic, roles, or handoffs —
+your agent will inherit that confusion.
+
+> Let’s define what makes a loop replicable — and where agents begin.
+
+
+
 
 ---
-
-**File:** `learning-how-to-think/chapter-2-thinking-problem.md`
