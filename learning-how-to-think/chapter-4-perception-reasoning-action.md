@@ -180,8 +180,4 @@ Memory without structure is clutter.
 
 ---
 
-File: learning-how-to-think/chapter-4-perception-reasoning-action.md
-
-Would you like to continue with **Chapter 5: Memory Is Not Storage — It’s Contextual Recall**?  
-We’ll strip away misconceptions about memory in AI *and* humans.
 
