@@ -98,6 +98,8 @@ Use the following checklist before writing prompts or building workflows:
 - [ ] Are there assumptions I'm skipping?
 - [ ] Is the outcome format clear?
 
+```
+
 Try this right now:
 
 1. Pick a simple decision you made today (e.g. what to eat, how to respond to a message).
@@ -136,8 +138,5 @@ We'll examine how prompt failures are just poorly translated thoughts.
 We’ll also introduce reusable mental templates and prompt scaffolds.
 
 > The next time your prompt fails — look at your mind first, not the model.
-
-
-
 
 ---
