@@ -179,7 +179,7 @@ def act(self, decision):
 
 ---
 
-Look Ahead
+### Look Ahead
 
 In the next chapter:
 
@@ -196,10 +196,4 @@ If roles are clear, memory is shared, and handoffs are respected.
 
 
 ---
-
-File: learning-how-to-think/chapter-9-thinking-systems.md
-
-Shall I proceed to **Chapter 10: Multi-Agent Thinking = Collaborative Thinking**?
-
-We’ll bring in team logic, handoff design, and role clarity next.
 
