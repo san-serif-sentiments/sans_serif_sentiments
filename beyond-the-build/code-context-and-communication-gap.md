@@ -1,4 +1,5 @@
 ---
+
 title: Beyond the Build: Code, Context, and the Communication Gap
 description: A strategic framework to decode workflows, distill assumptions, and deliver clarity between developers and non-technical teams.
 status: Stable
@@ -6,6 +7,7 @@ version: v1.0
 maintainer: Shailesh Rawat (PoeticMayhem)
 last_updated: 2025-07-26
 tags: [developer-communication, team-alignment, internal-collaboration, product-comms, tech-translation]
+
 ---
 
 # Beyond the Build: Code, Context, and the Communication Gap  
