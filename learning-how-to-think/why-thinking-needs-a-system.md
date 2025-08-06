@@ -114,6 +114,7 @@ Try this right now:
 
 Example:
 
+```markdown
 if time < 10:
     meal = "light breakfast"
 elif time < 14:
@@ -122,7 +123,7 @@ else:
     meal = "snack or light dinner"
 
 This same logic can be used to train an agent — but only if you understand it yourself.
-
+```
 
 ---
 
