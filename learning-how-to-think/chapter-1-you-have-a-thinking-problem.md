@@ -1,4 +1,4 @@
----
+--- 
 title: "You Don’t Have a Prompt Problem — You Have a Thinking Problem"
 chapter: 2
 author: "Shailesh Rawat"
