@@ -167,8 +167,9 @@ def build_context_prompt(...)
 > A reusable function that wraps your thinking design into a prompt.
 
 
-
+```python
 ## Audience, Goal, Constraints
+```
 
 > Adds framing so the model knows how to think, not just what to do.
 
@@ -204,10 +205,4 @@ And how do we keep humans responsible inside these thinking systems?
 
 
 ---
-
-File: learning-how-to-think/chapter-13-context-engineering.md
-
-Shall I proceed with **Chapter 14: From Agents to Agency**?
-
-It’s the ethical and strategic shift we’ve been heading toward — and sets up the reflective finale.
 
