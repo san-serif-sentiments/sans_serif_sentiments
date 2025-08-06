@@ -180,9 +180,3 @@ They’re externalized cognition — your thinking, modularized.
 
 
 ---
-
-File: learning-how-to-think/chapter-5-memory-context.md
-
-Shall I proceed with **Chapter 6: Workflows Are How You Think — Not Just How You Work** now?  
-I’ll maintain this level of structure, code clarity, and markdown cleanliness.
-
