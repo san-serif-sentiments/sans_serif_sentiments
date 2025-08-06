@@ -166,7 +166,7 @@ Use logic as a filter, not a shortcut.
 
 ---
 
-##3Look Ahead
+### Look Ahead
 
 In the next chapter:
 
@@ -183,9 +183,3 @@ Spoiler: It’s not the tool — it’s the mismatch between your loop and your 
 
 
 ---
-
-File: learning-how-to-think/chapter-7-when-not-to-use-agents.md
-
-Shall I proceed with **Chapter 8: Agentic Failure = Friction in Flow**?  
-We’ll go deep into real-world failure points — and how to design around them.
-
