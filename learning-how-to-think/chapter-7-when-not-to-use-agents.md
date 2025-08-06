@@ -135,23 +135,27 @@ def is_agent_suitable(task):
     if task['structured'] and task['repeatable']:
         return True
     return False
-```python
+```
 
 🧠 Explanation:
 
+```python
 if task['stakes'] == 'high' or task['emotional'] == True:
+```
 
 > If the task involves emotional weight or high consequences → Don't automate
 
 
-
+```python
 if task['structured'] and task['repeatable']:
+```
 
 > If the task is clear and consistent → Safe to automate
 
 
-
+```python
 return False
+```
 
 > Otherwise, better to pause or review manually.
 
@@ -162,7 +166,7 @@ Use logic as a filter, not a shortcut.
 
 ---
 
-Look Ahead
+##3Look Ahead
 
 In the next chapter:
 
