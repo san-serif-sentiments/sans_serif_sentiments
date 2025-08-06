@@ -104,7 +104,7 @@ If perception is broken, everything that follows is fragile.
 
 ---
 
-Action
+### Action
 
 Use this loop consciously before you build agents — or make decisions:
 
