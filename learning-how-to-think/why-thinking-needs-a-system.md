@@ -141,8 +141,3 @@ We’ll also introduce reusable mental templates and prompt scaffolds.
 
 
 ---
-
-File: learning-how-to-think/chapter-1-thinking-needs-a-system.md
-
-Would you like me to now convert Chapter 2 into the same clean Markdown format — no assumptions, no formatting errors, raw and GitHub-ready?
-
