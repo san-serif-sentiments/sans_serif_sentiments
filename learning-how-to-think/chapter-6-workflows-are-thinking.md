@@ -151,7 +151,7 @@ def daily_workflow():
 
 🧠 Explanation (Line by Line):
 
-'''python
+```python
 context = get_context("daily_priorities")
 ```
 > Pulls in the key inputs for today — like loading your Trello board.
