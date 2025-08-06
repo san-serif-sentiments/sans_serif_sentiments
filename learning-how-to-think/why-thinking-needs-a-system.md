@@ -141,3 +141,4 @@ We’ll also introduce reusable mental templates and prompt scaffolds.
 > The next time your prompt fails — look at your mind first, not the model.
 
 ---
+
