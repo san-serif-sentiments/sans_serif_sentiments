@@ -1,10 +1,4 @@
 ---
-✅ agents/thinking_system.py
-
-📁 GitHub-ready
-🧠 Cognitively structured
-💡 Fully explained below
-
 # agents/thinking_system.py
 
 ```python
