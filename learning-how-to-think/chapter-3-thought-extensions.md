@@ -79,15 +79,15 @@ If you don’t document that loop first, the agent has no map.
 
 ---
 
-Implication
+### Implication
 
-When you treat agents like tools:
+- When you treat agents like tools:
 
-You jump to frameworks.
+- You jump to frameworks.
 
-You duct-tape prompts and APIs.
+- You duct-tape prompts and APIs.
 
-You chase stack trends instead of system clarity.
+- You chase stack trends instead of system clarity.
 
 
 When you treat agents as thought extensions:
@@ -104,7 +104,7 @@ Agents scale only when your thinking is modular.
 
 ---
 
-Action
+*** Action
 
 Before you build any agent: Use this loop-mapping method:
 
