@@ -51,15 +51,15 @@ Just like in UX, the design of the environment shapes the interaction.
 
 Consider two prompt structures for the same task:
 
-```text
 **Poorly Engineered:**
-
+```text
 Here is some background. Please summarize this for an executive audience.
 [followed by 5,000 unstructured words]
 ```
-```text
-Well-Engineered:
 
+**Well-Engineered:**
+
+```text
 ## Task:
 Summarize for: [Executive audience]
 
@@ -75,9 +75,9 @@ Clarity, brevity, business impact
 [Chunked source text, labeled by topic]
 ```
 
-Same content.
-One produces hallucinations.
-The other supports structured cognition.
+> Same content.
+> One produces hallucinations.
+> The other supports structured cognition.
 
 
 ---
