@@ -1,5 +1,6 @@
 ---
 # agents/thinking_system.py
+---
 
 ```python
 class ThinkingAgentSystem:
