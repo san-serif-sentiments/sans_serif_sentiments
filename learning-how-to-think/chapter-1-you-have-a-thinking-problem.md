@@ -1,6 +1,6 @@
 # Learning How to Think (In the Age of AI)
 
-## Chapter 2: You Don’t Have a Prompt Problem — You Have a Thinking Problem
+## Chapter 1: You Don’t Have a Prompt Problem — You Have a Thinking Problem
 
 ### Friction
 
