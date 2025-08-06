@@ -51,12 +51,13 @@ Just like in UX, the design of the environment shapes the interaction.
 
 Consider two prompt structures for the same task:
 
+```text
 **Poorly Engineered:**
 
-```markdown
 Here is some background. Please summarize this for an executive audience.
 [followed by 5,000 unstructured words]
-
+```
+```text
 Well-Engineered:
 
 ## Task:
