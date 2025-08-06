@@ -121,9 +121,9 @@ def should_recall(memory, query):
     if memory['tag'] in query and memory['expired'] == False:
         return True
     return False
+```
 
 This simple logic outperforms complex retrieval — if your tagging and memory curation is solid.
-```
 
 ---
 
