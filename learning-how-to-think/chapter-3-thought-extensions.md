@@ -81,8 +81,7 @@ If you don’t document that loop first, the agent has no map.
 
 ### Implication
 
--
-> When you treat agents like tools:
+When you treat agents like tools:
 
 > You jump to frameworks.
 
