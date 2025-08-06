@@ -114,7 +114,7 @@ Try this:
 
 ---
 
-Bonus: Simple Recall Logic
+#### Bonus: Simple Recall Logic
 
 ```python
 def should_recall(memory, query):
@@ -123,7 +123,43 @@ def should_recall(memory, query):
     return False
 ```
 
-This simple logic outperforms complex retrieval — if your tagging and memory curation is solid.
+🧠 What does this code do?
+
+This is a basic function that decides whether or not a memory should be recalled by the agent — based on tags and whether the memory is still valid.
+
+🧩 Let's break it down:
+
+def should_recall(memory, query):
+
+This line defines a function named should_recall that takes two inputs:
+
+```
+memory → a stored memory object (e.g. a dictionary)
+
+query → the new user input or situation we're checking against
+
+if memory['tag'] in query and memory['expired'] == False:
+```
+
+This checks two things at once:
+
+1. If the tag attached to this memory (like project-a) is mentioned in the current query
+
+
+2. AND the memory has not expired
+
+
+
+If both are true, the system should recall this memory.
+
+return True
+
+Means: "Yes, this memory is relevant — bring it back."
+
+return False
+
+Otherwise, ignore this memory.
+
 
 ---
 
@@ -144,3 +180,9 @@ They’re externalized cognition — your thinking, modularized.
 
 
 ---
+
+File: learning-how-to-think/chapter-5-memory-context.md
+
+Shall I proceed with **Chapter 6: Workflows Are How You Think — Not Just How You Work** now?  
+I’ll maintain this level of structure, code clarity, and markdown cleanliness.
+
