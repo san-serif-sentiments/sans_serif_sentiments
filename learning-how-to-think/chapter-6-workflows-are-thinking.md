@@ -113,7 +113,7 @@ Use this Workflow Reflection Map to analyze or build your systems:
 
 ## Workflow as Thinking Map
 
-```
+```markdown
 - [ ] Trigger Point: What initiates each loop?
 - [ ] Filters: How do you decide what to do first?
 - [ ] Anchors: How do you remember what's in progress?
