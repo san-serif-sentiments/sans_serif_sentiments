@@ -135,6 +135,3 @@ Out of scope: Pure marketing or external comms.
 ## Last Reviewed / Last Updated
 - **Last Reviewed:** 2025-08-20  
 - **Next Review:** 2025-09-15
-
-Would you like me to also create a DEMO.md companion file that focuses purely on the tested demo run (screens, test cases, and results), so this README.md stays clean for high-level documentation?
-
