@@ -1,6 +1,6 @@
 ---
 title: Dev–Non-Tech Alignment Playbook
-description: A comprehensive, practical, and emotionally intelligent framework to close the communication gap between developers and non-technical teams.
+description: A practical, and emotionally intelligent framework to close the communication gap between developers and non-technical teams.
 version: v1.0
 status: Stable
 maintainer: Shailesh Rawat (PoeticMayhem)
