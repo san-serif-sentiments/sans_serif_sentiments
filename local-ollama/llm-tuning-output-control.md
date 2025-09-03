@@ -39,6 +39,7 @@ By controlling parameters like **temperature, top_p, num-predict, and context**,
 **Syntax**
 ```bash
 ollama run llama3.1 --temperature 0.2
+```
 
 Definition
 
@@ -62,9 +63,9 @@ Example
 2. num-predict – Max Tokens to Generate
 
 Syntax
-
+```bash
 ollama run llama3.1 --num-predict 50
-
+```
 Definition
 
 num-predict sets the maximum number of tokens the model can generate.
