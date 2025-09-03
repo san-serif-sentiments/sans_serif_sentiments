@@ -41,7 +41,7 @@ By controlling parameters like **temperature, top_p, num-predict, and context**,
 ollama run llama3.1 --temperature 0.2
 ```
 
-Definition
+Definition:
 
 Controls randomness of word selection.
 
@@ -60,13 +60,13 @@ Example
 
 ---
 
-2. num-predict – Max Tokens to Generate
+## 2. num-predict – Max Tokens to Generate
 
-Syntax
+**Syntax**
 ```bash
 ollama run llama3.1 --num-predict 50
 ```
-Definition
+Definition:
 
 num-predict sets the maximum number of tokens the model can generate.
 
@@ -90,12 +90,12 @@ Summaries, limiting verbosity, preventing runaway text.
 
 ---
 
-3. top_p – Probability Pool (Nucleus Sampling)
+## 3. top_p – Probability Pool (Nucleus Sampling)
 
-Syntax
-
+**Syntax**
+```bash
 ollama run llama3.1 --top_p 0.8
-
+```
 Definition
 
 Instead of choosing from all possible words, the model samples from the top_p probability mass.
@@ -117,12 +117,12 @@ Example
 
 ---
 
-4. repeat_penalty – Discourage Repetition
+## 4. repeat_penalty – Discourage Repetition
 
-Syntax
-
+**Syntax**
+```bash
 ollama run llama3.1 --repeat_penalty 1.2
-
+```
 Definition
 
 Penalizes reuse of the same words/tokens.
@@ -142,12 +142,12 @@ With penalty → “Cats are curious animals that explore their surroundings.”
 
 ---
 
-5. context – Model Memory Window
+## 5. context – Model Memory Window
 
-Syntax
-
+**Syntax**
+```bash
 ollama run llama3.1 --context 8192
-
+```
 Definition
 
 Sets how many tokens the model can “remember.”
@@ -169,12 +169,12 @@ Example
 
 ---
 
-6. seed – Reproducibility
+## 6. seed – Reproducibility
 
-Syntax
-
+**Syntax**
+```bash
 echo "Write a haiku about autumn." | ollama run llama3.1 --seed 42
-
+```
 Definition
 
 Fixes the random number generator.
@@ -194,12 +194,12 @@ Seed 99 → A completely new haiku.
 
 ---
 
-7. system – Role / Behavior
+## 7. system – Role / Behavior
 
-Syntax
-
+**Syntax**
+```bash
 ollama run llama3.1 --system "You are a strict grammar checker."
-
+```
 Definition
 
 Defines the system prompt (model role).
@@ -217,13 +217,13 @@ Output: “Correction: The quick brown fox jumped over the lazy dog.”
 
 ---
 
-8. Structured Outputs (JSON Enforcement)
+## 8. Structured Outputs (JSON Enforcement)
 
-Syntax
-
+**Syntax**
+```bash
 echo 'Respond only in JSON: {"task":"...","priority":"..."} for "buy milk".' \
 | ollama run llama3.1 --temperature 0
-
+```
 Definition
 
 Instructs model to respond in machine-readable format.
