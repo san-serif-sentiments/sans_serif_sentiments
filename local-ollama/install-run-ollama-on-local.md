@@ -1,4 +1,4 @@
-# Ollama Local LLM Cheat Sheet
+# Ollama Local LLM - How To
 
 ## Install
 | Command | Explanation |
