@@ -38,7 +38,7 @@ Ollama makes it simple to pull, run, and serve models with one command.
   ```bash
   brew install ollama/tap/ollama
   ollama serve
-````
+```
 
 ## Linux
 
