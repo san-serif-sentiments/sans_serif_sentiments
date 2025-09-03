@@ -335,5 +335,3 @@ Move on to the [Ollama Tuning Guide](./OLLAMA_TUNING.md) to learn **how to contr
 ```
 
 ---
-Do you want me to now **apply the same syntax + expected output treatment** to the **Tuning Guide** as well, so both files match in style?
-```
