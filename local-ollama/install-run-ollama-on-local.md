@@ -41,7 +41,6 @@ Ollama makes it simple to pull, run, and serve models with one command.
 ```
 
 ## Linux
-
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
 ollama serve
