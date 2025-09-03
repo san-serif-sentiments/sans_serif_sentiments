@@ -1,328 +1,335 @@
 ---
-title: LLM Output Control with Ollama
+title: Ollama Output Tuning Guide
 archetype: technical-doc
 status: stable
-owner: Shailesh Rawat
+owner: Shailesh “Shaily” Rawat
 maintainer: self
-version: 1.0
-tags: [Ollama, LLMs, Output Tuning, Local AI]
+version: 1.1
+tags: [Ollama, Output Tuning, Parameters, JSON, Reproducibility, Beginner Guide]
 last_reviewed: 2025-09-03
 ---
 
 # Overview
-This guide explains how to **control and tune local LLM outputs in Ollama**.  
-It covers all key runtime parameters with examples, expected behavior, and best practices.  
-Use this as a reference when building RAG pipelines or agent workflows.
+This guide explains **how to control Ollama’s outputs** using runtime parameters.  
+Every section shows:  
+1. The **command** (copy-paste ready).  
+2. The **syntax breakdown** (what each option means).  
+3. The **expected output** (what you’ll see if it works).
 
 ---
 
 # Why It Matters
-LLMs are **stochastic** (random by design). Without tuning, they may:
-- Produce overly long or inconsistent responses.
-- Repeat phrases or drift off-topic.
-- Fail to generate structured outputs (e.g., JSON).
-
-By controlling parameters like **temperature, top_p, num-predict, and context**, you can make outputs **predictable, concise, or creative** — depending on the task.
+- Without control: responses are long, random, or inconsistent.  
+- With control: responses are concise, reproducible, and integration-ready (e.g., JSON).  
+- This is essential before moving to RAG or agents.
 
 ---
 
-# Audience, Scope & Personas
-- **Business Analysts / Tech Writers**: Ensure LLM outputs remain concise and structured.  
-- **Developers / ML Engineers**: Tune model behavior for reproducibility and API integration.  
-- **Change / Adoption Managers**: Control narrative tone and reliability of AI-assisted outputs.
+# Key Parameters & Examples
 
----
-
-# Key Parameters Explained
-
-## 1. Temperature – Randomness
-**Syntax**
+## 1. Temperature — Randomness / Creativity
 ```bash
 ollama run llama3.1 --temperature 0.2
+````
+
+**Syntax breakdown**
+
+* `--temperature` → controls randomness in word choice.
+* `0` = fully deterministic.
+* `1` = very creative/random.
+
+**Expected output** (low temperature → predictable)
+
+```
+>>> Write two slogans for a coffee shop
+- Fresh brews, fast smiles.
+- Your daily dose of warmth.
 ```
 
-### Definition:
+**Higher temperature example**
 
-Controls randomness of word selection.
+```bash
+ollama run llama3.1 --temperature 0.9
+```
 
-Range: 0 (deterministic) → 1 (creative).
+**Expected output**
 
-Lower = safer, repeatable. Higher = diverse, imaginative.
-
-
-### Example
-
-0.2 → “Fresh brews, fast smiles.”
-
-0.9 → “Brewtopia: Where beans become dreams.”
-
-
+```
+>>> Write two slogans for a coffee shop
+- Brewtopia: Where beans become dreams.
+- Liquid lightning in every cup!
+```
 
 ---
 
-## 2. num-predict – Max Tokens to Generate
+## 2. num\_predict — Maximum Output Tokens
 
-**Syntax**
 ```bash
 ollama run llama3.1 --num-predict 50
 ```
-### Definition:
 
-num-predict sets the maximum number of tokens the model can generate.
+**Syntax breakdown**
 
-A token ≠ word ≠ character:
+* `--num-predict` → caps how many tokens are generated.
+* ⚠️ **Tokens ≠ words ≠ characters**.
 
-1 token ≈ 4 characters in English.
+  * 1 token ≈ 3–4 characters (in English).
+  * 50 tokens ≈ \~35–40 words (short paragraph).
 
-“Neural networks are amazing” = 5 words, ~7 tokens.
+**Expected output**
 
+```
+>>> Explain neural networks in simple terms.
+Neural networks are systems inspired by the brain. They process information in layers, learning patterns from data.
+```
 
-50 tokens ≈ 35–40 words of output (short paragraph).
-
-If unset, model generates until it thinks the response is “complete.”
-
-
-### Use Case
-
-Summaries, limiting verbosity, preventing runaway text.
-
-
+(Output stops after \~40 words.)
 
 ---
 
-## 3. top_p – Probability Pool (Nucleus Sampling)
+## 3. top\_p — Probability Pool (Nucleus Sampling)
 
-**Syntax**
 ```bash
 ollama run llama3.1 --top_p 0.8
 ```
-### Definition:
 
-Instead of choosing from all possible words, the model samples from the top_p probability mass.
+**Syntax breakdown**
 
-### Example: If top_p=0.8, the model only considers the top 80% most likely words.
+* `--top_p` → nucleus sampling.
+* Model only chooses from the top p% of most likely words.
+* Lower values → safer vocabulary. Higher values → more diverse.
 
-Lower = safer vocabulary, fewer rare words.
+**Expected output**
 
-Higher = more diverse vocabulary.
+```
+>>> Give 3 synonyms for "happy"
+- joyful
+- content
+- pleased
+```
 
+With `--top_p 1.0`:
 
-### Example
-
-0.8 → “joyful, content, pleased.”
-
-1.0 → “ecstatic, jubilant, tickled pink.”
-
-
+```
+- jubilant
+- ecstatic
+- tickled pink
+```
 
 ---
 
-## 4. repeat_penalty – Discourage Repetition
+## 4. top\_k — Vocabulary Cutoff
 
-**Syntax**
+```bash
+ollama run llama3.1 --top_k 40
+```
+
+**Syntax breakdown**
+
+* `--top_k` → consider only the top 40 most likely tokens at each step.
+* Lower = tighter, safer predictions.
+
+**Expected output**
+
+```
+>>> Write one line about AI
+AI is transforming how we work and live.
+```
+
+(Uses common words, avoids unusual phrasing.)
+
+---
+
+## 5. repeat\_penalty — Avoid Loops
+
 ```bash
 ollama run llama3.1 --repeat_penalty 1.2
 ```
-### Definition:
 
-Penalizes reuse of the same words/tokens.
+**Syntax breakdown**
 
-Default: 1.0 (no penalty).
+* `--repeat_penalty` → discourages repeating tokens.
+* `1.0` = no penalty.
+* `>1.0` = stronger penalty (common: 1.1–1.3).
 
-Range: 1.1–1.3 is effective.
+**Expected output**
 
+```
+>>> Write a sentence about cats
+Cats are curious animals that love exploring their surroundings.
+```
 
-### Example
+Without penalty, you might see:
 
-Without penalty → “Cats are cute. Cats are cute. Cats are cute.”
-
-With penalty → “Cats are curious animals that explore their surroundings.”
-
-
+```
+Cats are cute. Cats are cute. Cats are cute.
+```
 
 ---
 
-## 5. context – Model Memory Window
+## 6. num\_ctx — Context Window (Memory)
 
-**Syntax**
 ```bash
 ollama run llama3.1 --context 8192
 ```
-### Definition:
 
-Sets how many tokens the model can “remember.”
+**Syntax breakdown**
 
-Includes prompt + history + output.
+* `--context` (or `--num_ctx`) → sets how many tokens the model can “remember.”
+* Includes **prompt + history + output**.
+* Larger values = more memory but slower and heavier on RAM.
 
-Larger context = better long-doc handling, but uses more RAM and slows down.
+**Expected output**
 
-Typical ranges: 2048, 4096, 8192, up to 32k depending on model.
-
-
-### Example
-
-2048 → forgets earlier parts of a long story.
-
-8192 → retains details across multiple paragraphs.
-
-
+```
+>>> (Paste long text, then ask:) Summarize in 5 points
+The model includes early parts of your text in the summary (no forgetting).
+```
 
 ---
 
-## 6. seed – Reproducibility
+## 7. seed — Reproducibility
 
-**Syntax**
 ```bash
 echo "Write a haiku about autumn." | ollama run llama3.1 --seed 42
 ```
-### Definition:
 
-Fixes the random number generator.
+**Syntax breakdown**
 
-Same seed + same input → identical output every time.
+* `--seed` → sets the random generator seed.
+* Same input + same seed = identical output.
+* Different seed = variation.
 
-Different seed → different variation.
+**Expected output (with seed=42)**
 
-
-### Example
-
-Seed 42 → “Leaves fall quietly / Golden whispers paint the ground / Autumn breathes farewell.”
-
-Seed 99 → A completely new haiku.
-
-
+```
+Leaves fall quietly
+Golden whispers paint the ground
+Autumn breathes farewell
+```
 
 ---
 
-## 7. system – Role / Behavior
+## 8. stop — Stop Sequences
 
-**Syntax**
+```bash
+curl http://localhost:11434/api/generate \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model":"llama3.1",
+    "prompt":"List fruits:",
+    "options":{"stop":["banana"]}
+  }'
+```
+
+**Syntax breakdown**
+
+* `"stop":["banana"]` → output stops as soon as “banana” appears.
+
+**Expected output**
+
+```
+- apple
+- orange
+```
+
+(Output cut before “banana”.)
+
+---
+
+## 9. system — Role Prompt
+
 ```bash
 ollama run llama3.1 --system "You are a strict grammar checker."
 ```
-### Definition
 
-Defines the system prompt (model role).
+**Syntax breakdown**
 
-Shapes tone and style of every response.
+* `--system` → sets a persistent role instruction before user input.
 
+**Expected output**
 
-### Example
-
-Input: “The quick brown fox jump over the lazy dog.”
-
-Output: “Correction: The quick brown fox jumped over the lazy dog.”
-
-
-
----
-
-## 8. Structured Outputs (JSON Enforcement)
-
-**Syntax**
-```bash
-echo 'Respond only in JSON: {"task":"...","priority":"..."} for "buy milk".' \
-| ollama run llama3.1 --temperature 0
 ```
-### Definition:
-
-Instructs model to respond in machine-readable format.
-
-Combine with low temperature for reliability.
-
-
-### Example
-
-{"task":"buy milk","priority":"high"}
-
+>>> The fox jump
+Correction: The fox jumped.
+```
 
 ---
 
-## Practical Examples & Templates (✅/❌)
+# Practical API Example
 
-✅ Use:
+Best practice: pass options in JSON via API.
 
-echo "Summarize this in 3 bullets." | ollama run llama3.1 --num-predict 60 --temperature 0.3
+```bash
+curl http://localhost:11434/api/generate \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "llama3.1",
+    "prompt": "Summarize RAG in 3 bullets.",
+    "options": {
+      "temperature": 0.2,
+      "top_p": 0.9,
+      "num_predict": 80,
+      "repeat_penalty": 1.15,
+      "seed": 42
+    }
+  }'
+```
 
-❌ Don’t:
+**Expected output**
 
-ollama run llama3.1 --temperature 1 --num-predict 5000
-
-(Too random, too long, may crash low-RAM systems.)
-
-
----
-
-## Known Issues & Friction Points
-
-Token mismatch: Beginners confuse tokens with words or characters.
-
-Structured JSON drift: Even with instructions, models sometimes add commentary.
-
-Large context slowdowns: Setting --context 32k can overload RAM/VRAM.
-
-Repeat penalty too high: (>1.5) may make responses unnatural.
-
-
-
----
-
-## Tips & Best Practices
-
-For deterministic outputs → --temperature 0 --top_p 1 --seed 42.
-
-For creative brainstorming → --temperature 0.8 --top_p 1.
-
-For short summaries → --num-predict 50–80.
-
-Always combine system prompts with temperature control.
-
-Validate JSON outputs before using them in tools.
-
-
+```json
+{"response":"- Retrieves relevant documents\n- Uses them as context\n- Produces grounded answers","done":true}
+```
 
 ---
 
-## Dependencies, Risks & Escalation Path
+# Practical ✅ / ❌
 
-Ollama versions may add/remove parameter support.
+✅ **Controlled + reproducible**
 
-Not all models respect every setting equally.
+```json
+{"options":{"temperature":0.2,"num_predict":80,"seed":7}}
+```
 
-Larger context windows demand more hardware; fallback to smaller models if OOM occurs.
+❌ **Unbounded + random**
 
-
-
----
-
-## Success Metrics & Outcomes
-
-Predictability: Outputs reproducible under same seed.
-
-Efficiency: Responses truncated when expected.
-
-Reliability: JSON/tool outputs parse cleanly.
-
-Performance: Larger context windows handled without slowdown.
-
-
+```json
+{"options":{"temperature":1.0,"num_predict":4096}}
+```
 
 ---
 
-## Resources & References
+# Known Issues & Fixes
 
-Ollama Docs
-
-Tokenization Explained
-
-Prompting with JSON Schemas
-
-
+* **Token confusion** → `num_predict` is tokens, not words.
+* **JSON drift** → enforce `"Respond ONLY with JSON"`, `temperature=0`, and stop sequences.
+* **Large `num_ctx`** → may cause OOM (out-of-memory). Use smaller models.
+* **Repeat penalty too high (>1.5)** → can make responses unnatural.
 
 ---
 
-Last Reviewed / Last Updated
+# Tips & Best Practices
+
+* For **deterministic summaries**: `temperature=0, top_p=1, seed=42`.
+* For **creative brainstorming**: `temperature=0.8, top_p=1`.
+* Use **stop sequences** for truncation in pipelines.
+* Always **version-control prompt + options** for reproducibility.
+
+---
+
+# Resources
+
+* [Ollama API Docs](https://github.com/ollama/ollama)
+* [Tokenization Basics](https://huggingface.co/docs/transformers/tokenizer_summary)
+* [LangChain Output Parsers](https://python.langchain.com/docs/modules/model_io/output_parsers/)
+
+---
+
+# Last Reviewed / Last Updated
 
 2025-09-03
+
+```
 
 ---
