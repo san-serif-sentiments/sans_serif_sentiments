@@ -63,14 +63,15 @@ print(ner("Please reimburse my travel expenses for Mumbai trip on 10th April."))
 # Summarization
 summarizer = pipeline("summarization")
 print(summarizer("Artificial Intelligence is changing how enterprises handle HR and Finance by automating tasks."))
+```
 
 ✅ Why it matters: These tasks (classification, NER, summarization) are the building blocks of chatbots.
 
 
 ---
 
-Building a Simple Chatbot (LangChain Example)
-
+## Building a Simple Chatbot (LangChain Example)
+```python
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferMemory
@@ -89,8 +90,9 @@ chatbot = ConversationChain(
 
 print(chatbot.run("Hi, I want to know my leave balance."))
 print(chatbot.run("Can I take 3 days off next week?"))
+```
 
-Explanation:
+### Explanation:
 
 ConversationBufferMemory keeps track of past exchanges.
 
@@ -100,7 +102,7 @@ This turns a raw LLM into a stateful chatbot.
 
 ---
 
-Enterprise Applications
+## Enterprise Applications
 
 HR → leave management bot, payroll FAQ.
 
@@ -114,7 +116,7 @@ IT/Helpdesk → ticket classification, troubleshooting FAQs.
 
 ---
 
-Insights
+## Insights
 
 Traditional NLP chatbots (Rasa, Dialogflow) required heavy intent/entity design.
 
@@ -126,7 +128,7 @@ Enterprises often combine both: rule-based flows for critical tasks + LLMs for f
 
 ---
 
-Practical Example (✅/❌)
+## Practical Example (✅/❌)
 
 ✅ Example: Use Hugging Face to classify HR queries and LangChain to answer with enterprise policy context.
 ❌ Non-example: Letting a raw GPT model answer finance queries without grounding it in real policy documents.
@@ -134,7 +136,7 @@ Practical Example (✅/❌)
 
 ---
 
-Known Issues & Friction Points
+## Known Issues & Friction Points
 
 Ambiguity: Users may phrase the same request in 20 ways → intent detection can fail.
 
@@ -146,7 +148,7 @@ Adoption challenge: Employees trust bots only if answers are consistent and usef
 
 ---
 
-Tips & Best Practices
+## Tips & Best Practices
 
 Start with FAQ bots → expand to task bots.
 
@@ -160,7 +162,7 @@ Track usage → measure adoption, not just accuracy.
 
 ---
 
-Success Metrics & Outcomes
+## Success Metrics & Outcomes
 
 By the end of this chapter you should:
 
