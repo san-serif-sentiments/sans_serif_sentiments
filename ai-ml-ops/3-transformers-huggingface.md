@@ -73,6 +73,7 @@ qa = pipeline("question-answering")
 context = "TensorFlow and PyTorch are the two most popular deep learning frameworks."
 print(qa(question="Which frameworks are popular?", context=context))
 # → {'answer': 'TensorFlow and PyTorch'}
+```
 
 ### Why this matters:
 
@@ -84,12 +85,9 @@ Finance → extract invoice details.
 
 Supply Chain → answer product/order questions.
 
-
-
-
 ---
 
-How Transformers Actually Work (Simple View)
+## How Transformers Actually Work (Simple View)
 
 1. Break text into tokens (chunks like words or sub-words).
 
@@ -120,7 +118,7 @@ Together, they build a strong understanding.
 
 ---
 
-Loading Models with Hugging Face
+## Loading Models with Hugging Face
 
 PyTorch Example
 ```python
