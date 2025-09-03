@@ -74,7 +74,7 @@ context = "TensorFlow and PyTorch are the two most popular deep learning framewo
 print(qa(question="Which frameworks are popular?", context=context))
 # → {'answer': 'TensorFlow and PyTorch'}
 
-Why this matters:
+### Why this matters:
 
 Enterprises use these three tasks everywhere:
 
@@ -123,7 +123,7 @@ Together, they build a strong understanding.
 Loading Models with Hugging Face
 
 PyTorch Example
-
+```python
 from transformers import AutoTokenizer, AutoModel
 import torch
 
@@ -136,9 +136,9 @@ inputs = tokenizer("GenAI is changing enterprises.", return_tensors="pt")
 outputs = model(**inputs)
 
 print(outputs.last_hidden_state.shape)  # (batch_size, tokens, hidden_dim)
-
+```
 TensorFlow Example
-
+```python
 from transformers import TFAutoModel, AutoTokenizer
 
 # Load model
@@ -149,13 +149,14 @@ inputs = tokenizer("Transformers power modern chatbots.", return_tensors="tf")
 outputs = model(inputs)
 
 print(outputs.last_hidden_state.shape)
+```
 
 ✅ Why both? Because some companies use PyTorch, others use TensorFlow — but Hugging Face supports both.
 
 
 ---
 
-Fine-Tuning Basics
+## Fine-Tuning Basics
 
 You rarely train transformers from scratch. Instead, you:
 
@@ -166,8 +167,9 @@ Add a small custom layer (for classification).
 Train it briefly on your own dataset.
 
 
-Example: classify HR support tickets as leave request, payroll issue, IT query.
+### Example: classify HR support tickets as leave request, payroll issue, IT query.
 
+```python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, Trainer, TrainingArguments
 from datasets import load_dataset
 
@@ -197,11 +199,11 @@ trainer = Trainer(
 )
 
 trainer.train()
-
+```
 
 ---
 
-Enterprise Applications
+## Enterprise Applications
 
 HR → Q&A over policies, classify employee queries.
 
@@ -213,7 +215,7 @@ Supply Chain → summarize delivery reports, flag delays.
 
 ---
 
-Insights
+## Insights
 
 Transformers replaced older RNN/LSTM models because they scale better and capture long-range dependencies.
 
@@ -225,7 +227,7 @@ Fine-tuning with LoRA or adapters (lighter methods) is popular in enterprises be
 
 ---
 
-Practical Example (✅/❌)
+## Practical Example (✅/❌)
 
 ✅ Example: Use DistilBERT via Hugging Face to fine-tune a model for classifying HR queries.
 ❌ Non-example: Training GPT-3 scale models from scratch (costs millions).
@@ -233,7 +235,7 @@ Practical Example (✅/❌)
 
 ---
 
-Known Issues & Friction Points
+## Known Issues & Friction Points
 
 Transformers are large → memory/GPU bottlenecks for beginners.
 
@@ -245,7 +247,7 @@ Tokenization can confuse new learners: why text becomes sub-words (e.g., “unha
 
 ---
 
-Tips & Best Practices
+## Tips & Best Practices
 
 Start with pipelines → then move to AutoModel for more control.
 
@@ -259,7 +261,7 @@ Learn Hugging Face Datasets → clean datasets = better fine-tuning.
 
 ---
 
-Success Metrics & Outcomes
+## Success Metrics & Outcomes
 
 By the end of this chapter you should:
 
@@ -275,7 +277,7 @@ Understand the basics of fine-tuning for enterprise tasks.
 
 ---
 
-Resources & References
+## Resources & References
 
 The Illustrated Transformer (Jay Alammar)
 
