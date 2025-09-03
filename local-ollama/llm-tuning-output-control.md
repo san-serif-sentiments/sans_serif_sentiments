@@ -41,7 +41,7 @@ By controlling parameters like **temperature, top_p, num-predict, and context**,
 ollama run llama3.1 --temperature 0.2
 ```
 
-Definition:
+### Definition:
 
 Controls randomness of word selection.
 
@@ -50,7 +50,7 @@ Range: 0 (deterministic) → 1 (creative).
 Lower = safer, repeatable. Higher = diverse, imaginative.
 
 
-Example
+### Example
 
 0.2 → “Fresh brews, fast smiles.”
 
@@ -66,7 +66,7 @@ Example
 ```bash
 ollama run llama3.1 --num-predict 50
 ```
-Definition:
+### Definition:
 
 num-predict sets the maximum number of tokens the model can generate.
 
@@ -82,7 +82,7 @@ A token ≠ word ≠ character:
 If unset, model generates until it thinks the response is “complete.”
 
 
-Use Case
+### Use Case
 
 Summaries, limiting verbosity, preventing runaway text.
 
@@ -96,18 +96,18 @@ Summaries, limiting verbosity, preventing runaway text.
 ```bash
 ollama run llama3.1 --top_p 0.8
 ```
-Definition
+### Definition:
 
 Instead of choosing from all possible words, the model samples from the top_p probability mass.
 
-Example: If top_p=0.8, the model only considers the top 80% most likely words.
+### Example: If top_p=0.8, the model only considers the top 80% most likely words.
 
 Lower = safer vocabulary, fewer rare words.
 
 Higher = more diverse vocabulary.
 
 
-Example
+### Example
 
 0.8 → “joyful, content, pleased.”
 
@@ -123,7 +123,7 @@ Example
 ```bash
 ollama run llama3.1 --repeat_penalty 1.2
 ```
-Definition
+### Definition:
 
 Penalizes reuse of the same words/tokens.
 
@@ -132,7 +132,7 @@ Default: 1.0 (no penalty).
 Range: 1.1–1.3 is effective.
 
 
-Example
+### Example
 
 Without penalty → “Cats are cute. Cats are cute. Cats are cute.”
 
@@ -148,7 +148,7 @@ With penalty → “Cats are curious animals that explore their surroundings.”
 ```bash
 ollama run llama3.1 --context 8192
 ```
-Definition
+### Definition:
 
 Sets how many tokens the model can “remember.”
 
@@ -159,7 +159,7 @@ Larger context = better long-doc handling, but uses more RAM and slows down.
 Typical ranges: 2048, 4096, 8192, up to 32k depending on model.
 
 
-Example
+### Example
 
 2048 → forgets earlier parts of a long story.
 
@@ -175,7 +175,7 @@ Example
 ```bash
 echo "Write a haiku about autumn." | ollama run llama3.1 --seed 42
 ```
-Definition
+### Definition:
 
 Fixes the random number generator.
 
@@ -184,7 +184,7 @@ Same seed + same input → identical output every time.
 Different seed → different variation.
 
 
-Example
+### Example
 
 Seed 42 → “Leaves fall quietly / Golden whispers paint the ground / Autumn breathes farewell.”
 
@@ -200,14 +200,14 @@ Seed 99 → A completely new haiku.
 ```bash
 ollama run llama3.1 --system "You are a strict grammar checker."
 ```
-Definition
+### Definition
 
 Defines the system prompt (model role).
 
 Shapes tone and style of every response.
 
 
-Example
+### Example
 
 Input: “The quick brown fox jump over the lazy dog.”
 
@@ -224,21 +224,21 @@ Output: “Correction: The quick brown fox jumped over the lazy dog.”
 echo 'Respond only in JSON: {"task":"...","priority":"..."} for "buy milk".' \
 | ollama run llama3.1 --temperature 0
 ```
-Definition
+### Definition:
 
 Instructs model to respond in machine-readable format.
 
 Combine with low temperature for reliability.
 
 
-Example
+### Example
 
 {"task":"buy milk","priority":"high"}
 
 
 ---
 
-Practical Examples & Templates (✅/❌)
+## Practical Examples & Templates (✅/❌)
 
 ✅ Use:
 
@@ -253,7 +253,7 @@ ollama run llama3.1 --temperature 1 --num-predict 5000
 
 ---
 
-Known Issues & Friction Points
+## Known Issues & Friction Points
 
 Token mismatch: Beginners confuse tokens with words or characters.
 
@@ -267,7 +267,7 @@ Repeat penalty too high: (>1.5) may make responses unnatural.
 
 ---
 
-Tips & Best Practices
+## Tips & Best Practices
 
 For deterministic outputs → --temperature 0 --top_p 1 --seed 42.
 
@@ -283,7 +283,7 @@ Validate JSON outputs before using them in tools.
 
 ---
 
-Dependencies, Risks & Escalation Path
+## Dependencies, Risks & Escalation Path
 
 Ollama versions may add/remove parameter support.
 
@@ -295,7 +295,7 @@ Larger context windows demand more hardware; fallback to smaller models if OOM o
 
 ---
 
-Success Metrics & Outcomes
+## Success Metrics & Outcomes
 
 Predictability: Outputs reproducible under same seed.
 
@@ -309,7 +309,7 @@ Performance: Larger context windows handled without slowdown.
 
 ---
 
-Resources & References
+## Resources & References
 
 Ollama Docs
 
