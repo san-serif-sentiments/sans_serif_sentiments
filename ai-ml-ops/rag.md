@@ -1,4 +1,4 @@
----
+--- 
 title: Gen AI/ML Handbook – Chapter 5: Generative AI & RAG
 archetype: guidebook
 status: draft
