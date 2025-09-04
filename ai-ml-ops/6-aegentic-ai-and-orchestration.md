@@ -69,8 +69,9 @@ agent = initialize_agent(tools, llm, agent="zero-shot-react-description", verbos
 
 # Ask question
 agent.run("What is the latest update on AI regulations in India?")
+```
 
-Explanation:
+### Explanation:
 
 LLM = brain, tools = hands.
 
@@ -80,8 +81,9 @@ The agent first plans → then uses a tool → then explains.
 
 ---
 
-Multi-Agent Example (CrewAI)
+## Multi-Agent Example (CrewAI)
 
+```python
 from crewai import Agent, Task, Crew, Process
 
 # Define agents
@@ -109,8 +111,9 @@ crew = Crew(
 )
 
 crew.kickoff()
+```
 
-Explanation:
+### Explanation:
 
 Multiple agents, each with a role.
 
@@ -122,21 +125,22 @@ Very close to how enterprise teams operate.
 
 ---
 
-Visual: Orchestration Flow
-
+## Visual: Orchestration Flow
+```mermaid
 flowchart LR
     User --> Agent1[Planner Agent]
     Agent1 -->|calls| Tool1[Database/API]
     Agent1 --> Agent2[Domain Expert Agent]
     Agent2 -->|summarizes| Agent3[Communicator Agent]
     Agent3 --> User
+```
 
 ✅ This shows how one query can move through multiple agents and tools before returning a final answer.
 
 
 ---
 
-Enterprise Applications
+## Enterprise Applications
 
 HR → One agent fetches leave rules, another explains in simple language.
 
@@ -148,7 +152,7 @@ Supply Chain → One agent queries order database, another predicts delays, anot
 
 ---
 
-Insights
+## Insights
 
 Agentic AI ≠ just chatbots. It’s closer to a workflow engine with intelligence.
 
@@ -162,7 +166,7 @@ Orchestration frameworks (LangChain, CrewAI, LangGraph, Flowise) help manage com
 
 ---
 
-Practical Example (✅/❌)
+## Practical Example (✅/❌)
 
 ✅ Example: Use CrewAI to assign agents for HR policy research + simplification.
 ❌ Non-example: Ask a single GPT model to act like an HR + Finance + Supply Chain expert at once (no specialization).
@@ -170,7 +174,7 @@ Practical Example (✅/❌)
 
 ---
 
-Known Issues & Friction Points
+## Known Issues & Friction Points
 
 Complexity: Multi-agent systems can be hard to debug.
 
@@ -182,7 +186,7 @@ Control: Enterprises need guardrails (don’t let agents make risky API calls un
 
 ---
 
-Tips & Best Practices
+## Tips & Best Practices
 
 Start small: one agent + one tool, then expand.
 
@@ -196,7 +200,7 @@ Monitor latency and costs → multi-agent = multi-queries.
 
 ---
 
-Success Metrics & Outcomes
+## Success Metrics & Outcomes
 
 By the end of this chapter you should:
 
@@ -212,7 +216,7 @@ Recognize enterprise use cases for orchestration.
 
 ---
 
-Resources & References
+## Resources & References
 
 LangChain Agents
 
