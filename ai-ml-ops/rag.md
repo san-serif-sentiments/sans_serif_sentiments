@@ -42,14 +42,15 @@ from langchain.chat_models import ChatOpenAI
 llm = ChatOpenAI(temperature=0)
 response = llm.predict("What is the HR leave policy at our company?")
 print(response)
+```
 
 ⚠️ Problem: The LLM will “guess” — it doesn’t know your HR policy.
 
 
 ---
 
-Adding Retrieval (RAG Example)
-
+## Adding Retrieval (RAG Example)
+```python
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import RetrievalQA
 from langchain.vectorstores import FAISS
@@ -79,13 +80,14 @@ qa = RetrievalQA.from_chain_type(
 
 # Ask question
 print(qa.run("How many days of annual leave do employees get?"))
+```
 
 ✅ Now the answer comes from your documents, not the model’s imagination.
 
 
 ---
 
-Enterprise Applications
+## Enterprise Applications
 
 HR → Answer policy questions with RAG grounded in HR manuals.
 
@@ -97,7 +99,7 @@ Supply Chain → Track delivery docs, contracts, and generate order insights.
 
 ---
 
-Insights
+## Insights
 
 GenAI ≠ reliable by default. RAG is what makes it enterprise-ready.
 
@@ -111,7 +113,7 @@ Cloud providers (AWS, Azure, GCP) now offer RAG-ready services out of the box.
 
 ---
 
-Practical Example (✅/❌)
+## Practical Example (✅/❌)
 
 ✅ Example: Build a RAG chatbot that answers HR queries using your own policy docs.
 ❌ Non-example: Ask GPT about company policies without providing internal context.
@@ -119,7 +121,7 @@ Practical Example (✅/❌)
 
 ---
 
-Known Issues & Friction Points
+## Known Issues & Friction Points
 
 Chunking: Splitting documents too small → lose context. Too large → exceed token limits.
 
@@ -131,7 +133,7 @@ Evaluation: Hard to measure correctness — needs human review + automated metri
 
 ---
 
-Tips & Best Practices
+## Tips & Best Practices
 
 Always use RAG for enterprise use cases.
 
@@ -152,7 +154,7 @@ Monitor costs: embedding + retrieval queries add up in production.
 
 ---
 
-Success Metrics & Outcomes
+## Success Metrics & Outcomes
 
 By the end of this chapter you should:
 
@@ -168,7 +170,7 @@ Relate RAG to HR, Finance, and Supply Chain examples.
 
 ---
 
-Resources & References
+## Resources & References
 
 LangChain Retrieval Docs
 
