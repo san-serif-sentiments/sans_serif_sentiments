@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Gen AI/ML Handbook – Chapter 4: NLP & Chatbots
 archetype: guidebook
